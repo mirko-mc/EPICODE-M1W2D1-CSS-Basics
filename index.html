@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest Image</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- usare https://fontawesome.com/ per le icone
+        bisogna creare account e successivamente il kit
+        restituirà il tag script da incollare in head
+    -->
+    <script src="https://kit.fontawesome.com/b19825dab8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="card">
+        <!-- IMMAGINE DI SFONDO -->
+        <img src="https://picsum.photos/300/400" alt="baita">
+
+        <!-- PULSANTE SALVA -->
+            <!-- in css pulsante rosso -->
+            <button class="save">Save</button>
+        <!-- div padre dei pulsanti inferiori -->
+        <div class="container">
+            <!-- PULSANTE LINK -->
+            <button class="goTo">
+                <!-- in css icona vai a da ruotare-->
+                <i class="fa-solid fa-arrow-right"></i>
+                <!-- in css ellisse bianco -->
+                <span>Immagine dal sito <a href="https://picsum.photos/" target="_blank">Picsum Photos</a></span>
+            </button>
+
+            <!-- PULSANTE CARICA -->
+            <button class="upload">
+                <!-- in css pulsante cerchio bianco trasparente -->
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </button>
+
+            <!-- PULSANTE OPZIONI -->
+            <button class="options">
+                <!-- in css pulsante cerchio bianco trasparente -->
+                <i class="fa-solid fa-ellipsis"></i>
+            </button>
+        </div>
+    </section>
+</body>
+
+</html>
