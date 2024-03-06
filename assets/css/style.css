@@ -1,51 +1,107 @@
 .card {
     position: relative;
-    width: 300px;
-    height: 400px;
-    /* overflow: hidden; */
+    width: 450px;
+    height: 600px;
+    overflow: hidden;
     top: 50vh;
     left: 50vw;
     transform: translate(-50%, -50%);
 }
 
-body img {
+body img,
+.shadow {
+    position: relative;
+    border-radius: 40px;
     width: 100%;
     height: 100%;
     object-fit: none;
 }
 
-.save {
+button {
     position: absolute;
-    top: -30px;
-    right: 20px;
+    cursor: pointer;
+}
+
+.save {
+    top: -110px;
+    right: 10px;
     background-color: red;
-    border-radius: 30%/45%;
+    border-radius: 40px;
     text-align: center;
     color: white;
-    transition: all 3s linear;
+    transition: all 1s linear;
+    border: 0;
+    width: 150px;
+    height: 100px;
+    font-weight: bold;
+    font-size: xx-large;
 }
 
-.card:hover .save{
-    transform: translateY(50px);
+.card:hover .save {
+    transform: translateY(120px);
 }
 
-.container{
+.shadow {
     position: absolute;
-    bottom: -30px;
+    background-color: grey;
+    opacity: 0.5;
+    transition: opacity 1s linear;
+}
+
+.card:hover .shadow {
+    transform: opacity 0.5;
+}
+
+.container {
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
     left: 0;
-    transition: all 3s linear;
+    transition: all 1s linear;
 }
 
-.card:hover .container{
-    transform: translateY(-50px);
+.card:hover .container {
+    transform: translateY(-80px);
 }
 
-.container button{
+.container button {
     background-color: white;
     color: black;
 }
-.upload, .options{
+
+.goTo i {
+    rotate: -45deg;
+}
+
+.upload,
+.options,
+.goTo {
+    height: 70px;
+    border: 0;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.upload,
+.options {
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.goTo {
+    left: 10px;
+    border-radius: 40px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.upload {
+    left: 290px;
+}
+
+.options {
+    left: 370px;
 }
